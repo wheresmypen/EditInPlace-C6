@@ -1,6 +1,19 @@
 /*#whole, #nameLabel, #motto, #lived, #para1, #para2 */
 
 
-*{
+*{	
+	z-index: 1;
 	width:100%;
+}
+
+.holder{
+	min-height:75px;
+}
+
+#label1{
+	font-size: 28px;
+}
+
+.holder{
+	z-index: 100;
 }
