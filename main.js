@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
 	
 var grabField="";
 var stayField="";
@@ -8,7 +8,7 @@ var selectToSelect = function(){
 };
 
 var appear = function(e){
-	event.preventDefault;
+	e.preventDefault;
 	grabField = $(this).attr('class');
 	index = grabField.slice(6,7);
 	var toob = $("#label"+index).text();
@@ -16,6 +16,7 @@ var appear = function(e){
 	$("#hLabel"+index).show();
 	$("#vLabel"+index).show();
 	stayField=index;
+    console.log("selected to appear")
 };
 
 var selectToRevise = function(e){
@@ -25,7 +26,7 @@ var selectToRevise = function(e){
 
 
 var renderNew = function(e){
-	event.preventDefault;
+	e.preventDefault;
 	var newOriginal1 = $("#hLabel"+stayField).val();
 	console.log(newOriginal1);
 	$("#hLabel"+stayField).hide();
